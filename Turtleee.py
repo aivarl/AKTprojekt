@@ -52,7 +52,7 @@ def korduste_töötlus(inputStr):
     #delimiters2 = ";", " ja ", ","
     #commands = split(delimiters2, command_string)
     command_string += part3
-    print(command_string)
+    #print(command_string)
     return command_string
 ## Käskluste realiseerimine
 def do(word, argument):
@@ -95,7 +95,7 @@ def do(word, argument):
 ## korduste_töötlus kaotab ära korduskäsklusele eelnevad käsud
 ## executeCommands hakkab käske algusest täitma, kuni jõuab korduskäsuni
 def executeCommands(inputStr):
-    delimiters = ";", " ja ", ","
+    delimiters = ";", " ja ", "," , "."
     commandslist = split(delimiters, inputStr)
     for command in commandslist:
         shape('turtle')
